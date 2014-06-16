@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F370084C-ACFC-494E-834C-5A62754AF4FB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Movies</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A1B378A-1592-4F88-A833-690F833CBBD6</key>
+		<string>https://github.com/ashwini2086/RTMovies.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Movies.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A1B378A-1592-4F88-A833-690F833CBBD6</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ashwini2086/RTMovies.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A1B378A-1592-4F88-A833-690F833CBBD6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A1B378A-1592-4F88-A833-690F833CBBD6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RTMovies</string>
+		</dict>
+	</array>
+</dict>
+</plist>

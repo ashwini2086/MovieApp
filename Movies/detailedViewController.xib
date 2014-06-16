@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="detailedViewController">
+            <connections>
+                <outlet property="detailedProfileImageView" destination="8cv-Jk-WGR" id="ybt-7j-Skx"/>
+                <outlet property="detailedScrollView" destination="8hT-lY-naW" id="XFd-oc-U8S"/>
+                <outlet property="synopsisLabelView" destination="naB-Qx-ghT" id="8dX-iG-XC7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hT-lY-naW">
+                    <rect key="frame" x="0.0" y="30" width="320" height="538"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="685" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="naB-Qx-ghT">
+                            <rect key="frame" x="0.0" y="156" width="320" height="500"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="500" id="PDX-PN-Unb"/>
+                                <constraint firstAttribute="width" constant="320" id="sfK-HZ-cGI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                            <color key="textColor" red="0.36033241129999999" green="0.1151366337" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8cv-Jk-WGR">
+                            <rect key="frame" x="41" y="6" width="238" height="146"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="238" id="3Gd-7C-8Kp"/>
+                                <constraint firstAttribute="height" constant="146" id="F71-S8-f4f"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="naB-Qx-ghT" firstAttribute="top" secondItem="8cv-Jk-WGR" secondAttribute="top" constant="150" id="0IN-ay-dDJ"/>
+                        <constraint firstItem="naB-Qx-ghT" firstAttribute="leading" secondItem="8hT-lY-naW" secondAttribute="leading" id="4sk-YK-tfi"/>
+                        <constraint firstItem="8cv-Jk-WGR" firstAttribute="centerX" secondItem="8hT-lY-naW" secondAttribute="centerX" id="Eto-ye-rbU"/>
+                        <constraint firstAttribute="bottom" secondItem="naB-Qx-ghT" secondAttribute="bottom" constant="500" id="ND9-gT-SeP"/>
+                        <constraint firstItem="8cv-Jk-WGR" firstAttribute="top" secondItem="8hT-lY-naW" secondAttribute="top" constant="6" id="Xnm-C4-k1X"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8hT-lY-naW" secondAttribute="bottom" id="5Dd-LD-Gsy"/>
+                <constraint firstItem="8hT-lY-naW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Th5-ni-yFW"/>
+                <constraint firstItem="8hT-lY-naW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hjY-he-Kqw"/>
+                <constraint firstAttribute="trailing" secondItem="8hT-lY-naW" secondAttribute="trailing" id="lX5-TT-bdG"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
