@@ -17,36 +17,34 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hT-lY-naW">
-                    <rect key="frame" x="0.0" y="30" width="320" height="538"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8cv-Jk-WGR">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="3Gd-7C-8Kp"/>
+                        <constraint firstAttribute="height" priority="250" constant="568" id="F71-S8-f4f"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hT-lY-naW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
-                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="685" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="naB-Qx-ghT">
-                            <rect key="frame" x="0.0" y="156" width="320" height="500"/>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="685" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="320" translatesAutoresizingMaskIntoConstraints="NO" id="naB-Qx-ghT">
+                            <rect key="frame" x="0.0" y="190" width="320" height="600"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="500" id="PDX-PN-Unb"/>
+                                <constraint firstAttribute="height" constant="600" id="PDX-PN-Unb"/>
                                 <constraint firstAttribute="width" constant="320" id="sfK-HZ-cGI"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
-                            <color key="textColor" red="0.36033241129999999" green="0.1151366337" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="1" green="0.97340345699999997" blue="0.98048913130000004" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8cv-Jk-WGR">
-                            <rect key="frame" x="41" y="6" width="238" height="146"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="238" id="3Gd-7C-8Kp"/>
-                                <constraint firstAttribute="height" constant="146" id="F71-S8-f4f"/>
-                            </constraints>
-                        </imageView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="naB-Qx-ghT" firstAttribute="top" secondItem="8cv-Jk-WGR" secondAttribute="top" constant="150" id="0IN-ay-dDJ"/>
                         <constraint firstItem="naB-Qx-ghT" firstAttribute="leading" secondItem="8hT-lY-naW" secondAttribute="leading" id="4sk-YK-tfi"/>
-                        <constraint firstItem="8cv-Jk-WGR" firstAttribute="centerX" secondItem="8hT-lY-naW" secondAttribute="centerX" id="Eto-ye-rbU"/>
-                        <constraint firstAttribute="bottom" secondItem="naB-Qx-ghT" secondAttribute="bottom" constant="500" id="ND9-gT-SeP"/>
-                        <constraint firstItem="8cv-Jk-WGR" firstAttribute="top" secondItem="8hT-lY-naW" secondAttribute="top" constant="6" id="Xnm-C4-k1X"/>
+                        <constraint firstAttribute="bottom" secondItem="naB-Qx-ghT" secondAttribute="bottom" constant="238" id="ND9-gT-SeP"/>
                     </constraints>
                 </scrollView>
             </subviews>

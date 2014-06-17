@@ -12,10 +12,6 @@
 #import "UIImageView+AFNetworking.h"
 
 @interface detailedViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *criticsRatingImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *userRatingImageView;
-@property (weak, nonatomic) IBOutlet UILabel *criticsRatingLabeView;
-@property (weak, nonatomic) IBOutlet UILabel *userRatingLabelView;
 @property (weak, nonatomic) IBOutlet UILabel *synopsisLabelView;
 @property (weak, nonatomic) IBOutlet UIScrollView *detailedScrollView;
 @property (weak, nonatomic) IBOutlet UIImageView *detailedProfileImageView;
@@ -47,46 +43,12 @@
     [UIImageView transitionWithView:self.detailedProfileImageView duration:0.3f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{self.detailedProfileImageView.image= [UIImage imageWithData:data];
     } completion:nil];
     
-/*    self.criticsRatingImageView.image = [UIImage imageNamed:@"rt_cr.png"];
-    self.criticsRatingLabeView.text = [self getRating:self.movie[@"ratings"] ratingType:criticRating];
-
-    self.userRatingImageView.image = [UIImage imageNamed:@"rt_ar.png"];
-    self.userRatingLabelView.text = [self getRating:self.movie[@"ratings"] ratingType:userRating];
-*/
     [self.view endEditing:YES];
 }
 
 - (NSString* )getProfileURL:(NSDictionary *)movieDic {
     NSString *thumbURL = [[NSString alloc] initWithString:[movieDic objectForKey:@"detailed"]];
     return thumbURL;
-}
-
-- (NSNumber *)getRating:(NSDictionary *)movieDic ratingType:(enum RatingsEnum) rating{
-    
-    NSNumber *result = [[NSNumber alloc]init];
-    NSNumber *ratingNum = [[NSNumber alloc]init];
-    
-    switch (rating) {
-        case userRating:
-        {
-            ratingNum = [movieDic objectForKey:@"audience_score"];
-            break;
-        }
-        case criticRating:
-        {
-            ratingNum = [movieDic objectForKey:@"critics_score"];
-            break;
-        }
-        default:
-            break;
-    }
-    
-    if(ratingNum && ratingNum > 0)
-    {
-        result = ratingNum;
-    }
-    
-    return result;
 }
 
 - (void)didReceiveMemoryWarning

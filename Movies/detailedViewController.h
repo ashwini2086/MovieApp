@@ -12,10 +12,4 @@
 
 @property (strong, nonatomic) NSDictionary *movie;
 
-enum RatingsEnum
-{
-    userRating,
-    criticRating,
-};
-
 @end

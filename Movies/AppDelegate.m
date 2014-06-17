@@ -15,7 +15,7 @@
 {
     MovieViewController *boxOfficeController = [[MovieViewController alloc]init];
     
-    boxOfficeController.rtAPI = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us&apikey=3dx3pgwhbgynhze6jvredten";
+    boxOfficeController.rtAPI = @"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/box_office.json?limit=16&country=us&apikey=ge4pv4ns3e73nsj4b8s38z4n";
     
     UINavigationController *boxOfficeNavController = [[UINavigationController alloc]initWithRootViewController:boxOfficeController];
     
@@ -27,7 +27,7 @@
     
     MovieViewController *topDVDController = [[MovieViewController alloc] init];
     
-    topDVDController.rtAPI = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=3dx3pgwhbgynhze6jvredten";
+    topDVDController.rtAPI = @"http://api.rottentomatoes.com/api/public/v1.0/lists/dvds/top_rentals.json?apikey=ge4pv4ns3e73nsj4b8s38z4n";
     UINavigationController * topDVDNavController = [[UINavigationController alloc] initWithRootViewController:topDVDController];
     topDVDNavController.tabBarItem.title = @"Top DVDs";
     topDVDNavController.tabBarItem.image = [UIImage imageNamed:@"topDVD"];
